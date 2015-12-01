@@ -340,6 +340,7 @@ function guessOwnersForPullRequest(
 
   // This is the line that implements the actual algorithm, all the lines
   // before are there to fetch and extract the data needed.
+  console.log('guessOwners', files, blames, creator, config);
   return guessOwners(files, blames, creator, config);
 }
 
